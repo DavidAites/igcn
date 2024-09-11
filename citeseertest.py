@@ -176,7 +176,7 @@ test_features = torch.as_tensor(test_features)
 test_labels = torch.as_tensor(test_labels)
 
 
-# Basic one layer linear classifier. Nothing terribly exciting.
+# Basic one layer classifier. Nothing terribly exciting.
 class Classifier(nn.Module):
     def __init__(self):
         super().__init__()
