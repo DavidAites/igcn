@@ -88,6 +88,9 @@ for x in range(0, len(feat_list)):
 # but this is ugly test code to make sure the algorithm works.
 # Uncomment the lines appropriate to each hop here and below to make it go further. Comment them out to
 # make it not hop as far.
+#
+# This part of the code is also badly optimized so it is not considered part of the training time.
+# Also note that in a real application this only needs done once as training is only done on the output of this.
 normalized_adjacency_matrix_1 = numpy.dot(numpy.dot(degree_inverse_square, adjacency), degree_inverse_square)
 #normalized_adjacency_matrix_2 = numpy.dot(normalized_adjacency_matrix_1, normalized_adjacency_matrix_1)
 #normalized_adjacency_matrix_3 = numpy.dot(normalized_adjacency_matrix_2, normalized_adjacency_matrix_1)
